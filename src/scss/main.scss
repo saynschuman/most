@@ -1,0 +1,19 @@
+@import "includes/variables";
+@import "includes/fonts";
+@import "vendors/bootstrap";
+
+header.header {
+  width: 280px;
+  float: left;
+  position: fixed;
+  height: 100%;
+}
+
+main {
+  width: calc(100% - 280px);
+  float: right;
+  background: #0093dd;
+  &.home {
+
+  }
+}
