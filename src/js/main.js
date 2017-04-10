@@ -32,4 +32,22 @@
 	  focusOnSelect: true
 	});		
 
+	// mobile menu
+
+	$('.mobile-but').click(function(){
+		$('header.header').fadeIn(200);
+	})
+	$('.close').click(function(){
+		$('header.header').fadeOut(200);
+	})
+
+	// tabs 
+
+	$('.nav-tabs li').click(function(){
+		$('.nav-tabs li').removeClass('active');
+		$(this).toggleClass('active');
+		$('.header-body').toggleClass('active');
+	})
+	
+
 })(jQuery);

@@ -1,3 +1,109 @@
 @media screen and (max-width: 1200px) {
   .container {
+    width: 100%; }
+  header.header {
+    display: none; }
+  .mobile-but {
+    display: block; }
+  main {
+    float: none;
     width: 100%; } }
+
+@media screen and (max-width: 991px) {
+  .pag {
+    margin-bottom: 30px; }
+  #sl-mid-inner {
+    bottom: auto;
+    top: 0; }
+  .inf-app {
+    position: relative;
+    background: #fff;
+    padding: 0; }
+  .add {
+    width: 100%;
+    background: transparent;
+    color: #fff; }
+  .content {
+    padding: 0 10px; }
+  a.title.smaller {
+    font-size: 19px;
+    color: #2d201d;
+    letter-spacing: 0;
+    padding: 33px 0;
+    padding-left: 70px; }
+  a.title::after {
+    display: none; }
+  a.title.smaller::before {
+    left: 17px;
+    font-size: 48px;
+    top: 10px;
+    font-weight: 100; }
+  .row {
+    margin-left: 0;
+    margin-right: 0; }
+  .container {
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media screen and (max-width: 768px) {
+  .send {
+    margin-bottom: 30px; }
+  .inf .show {
+    text-align: right;
+    position: absolute;
+    bottom: 7px;
+    right: 20px;
+    font-size: 11px;
+    color: #888;
+    width: 100%; }
+  .pag li {
+    height: 30px;
+    width: 30px; }
+  .pag li a {
+    padding-top: 5px; }
+  .sub-t-list li {
+    display: block;
+    margin-bottom: 10px; }
+  #sl-inner img {
+    border: 1px solid #fff;
+    -webkit-border-radius: 1px;
+            border-radius: 1px;
+    height: auto;
+    margin-left: 0; }
+  .mobile-but {
+    top: 101px;
+    left: 11px; }
+  a.title::before {
+    content: "\f104";
+    position: absolute;
+    font-family: FontAwesome;
+    color: #cfcfcf;
+    left: 9px;
+    font-size: 43px;
+    top: 0;
+    font-weight: 100; }
+  a.title::after {
+    left: 40px; }
+  a.title {
+    position: relative;
+    font-size: 29px;
+    display: block;
+    width: 100%;
+    color: #000;
+    padding: 13px 0;
+    padding-left: 60px;
+    font-family: proximaBold, sans-serif;
+    font-weight: 600; }
+  .add {
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    text-align: right;
+    max-width: 200px;
+    float: right;
+    padding-right: 10px; }
+  #sl-inner {
+    width: 40%;
+    position: absolute;
+    top: 77px;
+    left: 12px; } }

@@ -5956,7 +5956,8 @@ header.header {
   float: left;
   position: fixed;
   height: 100%;
-  background: #2f252f; }
+  background: #2f252f;
+  z-index: 9; }
 
 .logo {
   font-family: proximaBold, sans-serif;
@@ -6094,7 +6095,7 @@ main {
   margin: 0 auto;
   margin-top: -100px;
   position: relative;
-  z-index: 99;
+  z-index: 8;
   padding-top: 16px;
   margin-bottom: 18px;
   font-weight: 600; }
@@ -6151,7 +6152,7 @@ main {
 
 #sl-mid-inner {
   position: absolute;
-  bottom: 0; }
+  bottom: 100px; }
   #sl-mid-inner img {
     margin: 5px;
     width: 41px;
@@ -6190,7 +6191,6 @@ main {
     color: #888; }
 
 .big-sl {
-  max-height: 300px;
   position: relative; }
 
 .sell-tit {
@@ -6198,7 +6198,7 @@ main {
   font-size: 23px;
   color: #2d201d;
   letter-spacing: 0;
-  margin-top: 120px;
+  margin-top: 15px;
   font-weight: 600;
   margin-bottom: 15px; }
 
@@ -6223,7 +6223,9 @@ main {
   margin: 0;
   color: #fff;
   text-align: center;
-  border: 0; }
+  border: 0;
+  z-index: 8;
+  position: relative; }
   .nav-tabs li {
     display: inline-block;
     padding: 6px 0;
@@ -6250,7 +6252,11 @@ main {
         opacity: 1; }
 
 .header-body {
-  padding: 70px 23px; }
+  padding: 70px 23px;
+  position: absolute;
+  display: none; }
+  .header-body.active {
+    display: block; }
 
 .head-nav {
   color: #cdcdcd;
@@ -6266,6 +6272,20 @@ nav .menu {
   nav .menu li {
     list-style: none;
     position: relative; }
+    nav .menu li:first-child a::after {
+      background: red;
+      -webkit-border-radius: 40px;
+              border-radius: 40px;
+      padding: 3px 8px;
+      color: #fff; }
+    nav .menu li.active::before {
+      content: '';
+      position: absolute;
+      left: -23px;
+      top: 0;
+      height: 100%;
+      width: 8px;
+      background: #00e8ff; }
     nav .menu li a {
       color: #cfcfcf;
       width: 100%;
@@ -6282,3 +6302,22 @@ nav .menu {
         -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%); }
+
+.mobile-but {
+  display: none;
+  position: fixed;
+  top: 185px;
+  left: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 8;
+  padding: 10px;
+  border: 1px solid #000; }
+
+.close {
+  opacity: 1; }
+  .close i {
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    top: 15px;
+    right: 15px; }
